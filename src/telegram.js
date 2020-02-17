@@ -1582,6 +1582,19 @@ class TelegramBot extends EventEmitter {
   }
 
   /**
+   * Use this method to get all the fucking chats why the fuck ISNT THIS ALREADY HERE?!
+   * (array containing current username of the chat, current
+   * username of a user, group or channel, etc.).
+   * @param  {Number|String} name for the target chat or username of the target supergroup or channel
+   * @param  {Object} [options] Additional Telegram query options
+   * @return {Promise}
+   * @see https://core.telegram.org/bots/api#getchat
+   */
+  getAllChats() {
+    return this._request('getAllChats');
+  }
+  
+  /**
    * Returns the administrators in a chat in form of an Array of `ChatMember` objects.
    * @param  {Number|String} chatId  Unique identifier for the target group or username of the target supergroup
    * @param  {Object} [options] Additional Telegram query options
